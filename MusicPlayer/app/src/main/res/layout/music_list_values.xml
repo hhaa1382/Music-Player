@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_view_layout"
+        android:background="@null"
+        >
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            tools:src="@drawable/ic_launcher_background"
+            android:adjustViewBounds="true"
+            android:id="@+id/music_list_image"
+            android:layout_margin="16dp"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/music_list_image"
+            android:layout_alignTop="@id/music_list_image"
+            tools:text="Music name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/music_list_title"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/music_list_image"
+            android:layout_below="@id/music_list_title"
+            tools:text="Music name"
+            android:textSize="12sp"
+            android:id="@+id/music_list_artist"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
